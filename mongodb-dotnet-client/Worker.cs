@@ -48,7 +48,7 @@ namespace MongoDb.Client.Test
         private IMongoDatabase GetDatabase()
         {
 
-            var settings = MongoClientSettings.FromConnectionString("mongodb+srv://netzsch-bot:9PGNOaFSqL08OSW9@cluster0.q0msgdt.mongodb.net/?retryWrites=true&w=majority");
+            var settings = MongoClientSettings.FromConnectionString("**");
             settings.ServerApi = new ServerApi(ServerApiVersion.V1);
             var client = new MongoClient(settings);
             var database = client.GetDatabase("proteus-now");
